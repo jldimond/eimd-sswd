@@ -1,5 +1,5 @@
 
-### IPython Notebook and data supplementing the manuscript: "_eimd_"
+### IPython Notebook and data supplemental to the manuscript: "_Up in arms: Immune and nervous system response to sea star wasting disease_"
 
 <!---
 INSERT LINKS HERE
@@ -7,13 +7,13 @@ INSERT LINKS HERE
 
 ---
 
-The repository includes a IPython notebook (.ipynb file) that can be downloaded and interactively executed. The code in the IPython notebook will download raw data and process data such that figures in the manuscript are reproduced (in theory). 
+The repository includes a IPython notebook (.ipynb file) that can be downloaded locally and interactively executed. The code in the IPython notebook will download data and process data such that figures in the manuscript are reproduced (in theory). 
 
 ---
 To execute the IPython Notebook in its entirety you will need:   
 
 * IPython - [install instructions](http://ipython.org/install.html)    
-* Blast -    
+* NBCI Blast -    
 * R - [install instructions](http://www.r-project.org/)  
 * rpy2 (interface to R from Python) - [install instructions](http://rpy.sourceforge.net/)  
 
