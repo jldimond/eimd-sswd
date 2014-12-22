@@ -16,6 +16,31 @@ To execute the IPython Notebook in its entirety you will need:
 * NBCI Blast -  [install instructions](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)  
 * R - [install instructions](http://www.r-project.org/)  
 * rpy2 (interface to R from Python) - [install instructions](http://rpy.sourceforge.net/)  
+* SQLShare-pythonclient [install instructions](https://github.com/uwescience/sqlshare-pythonclient)
+
+---
+
+In addition you will need a local copy of the UniProt/SwissProt Blast Database. 
+If you do not already have this database you can create it once you install NCBI Blast. Create a blast database first download a fasta file from <http://www.uniprot.org/downloads> that of Reviewed (Swiss-Prot) then run make blastdb commands.
+Below is an example code if you wanted to create the database in a subdirectory named `blastdb`. This will result in files > 300 MB.
+
+`$ mkdir blastdb`
+
+`$ cd blastdb`
+
+`$ curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz`
+
+`$ gunzip uniprot_sprot.fasta.gz`
+
+`$ makeblastdb -in uniprot_sprot.fasta -dbtype prot -out uniprot_sprot`
+
+This will generate a Protein database that you can you to blast sequences. If you made the `blastdb` subdirectory in your home directory you would modify the IPython notebook variables such that 
+
+```
+#Variables user needs to modify accordingly
+db="~/blastdb/uniprot_sprot"
+```
+
 
 ---
 ###Description of Files
@@ -25,10 +50,11 @@ To execute the IPython Notebook in its entirety you will need:
 * `data/Phel_countdata.txt` - Tab-delimited text file with read count data from 6 P hel RNA-seq libraries, 3 treated and 3 control libraries.
 * `scripts/count_fasta.pl` - Perl script:  Author: Joseph Fass (modified from script by Brad Sickler) last revised: November 2010 - http://bioinformatics.ucdavis.edu.
 * `wd` - subdirectory that serves as output directory (working directory) when the repository is downloaded and the IPython notebook is executed locally.
+*  `precompiled_wd` - subdirectory that serves provides all data that will be produced in `wd` by running commands in notebook.
 
 ---
 Note the current version of the IPython Notebook can be viewed (not interactive) in any web browser at: 
-<http://nbviewer.ipython.org/github/che625/olson-ms-nb/blob/master/BiGo_dev.ipynb>
+<http://nbviewer.ipython.org/github/sr320/eimd-sswd/blob/master/eimd_data.ipynb>
 
 ----
 ##Instructions
