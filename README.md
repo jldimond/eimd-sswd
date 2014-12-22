@@ -13,7 +13,7 @@ The repository includes a IPython notebook (.ipynb file) that can be downloaded 
 To execute the IPython Notebook in its entirety you will need:   
 
 * IPython - [install instructions](http://ipython.org/install.html)    
-* NBCI Blast -    
+* NBCI Blast -  [install instructions](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)  
 * R - [install instructions](http://www.r-project.org/)  
 * rpy2 (interface to R from Python) - [install instructions](http://rpy.sourceforge.net/)  
 
