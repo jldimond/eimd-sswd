@@ -7,10 +7,52 @@ INSERT LINKS HERE
 
 ---
 
-The repository includes a IPython notebook (.ipynb file) that can be downloaded locally and interactively executed. The code in the IPython notebook will download data and process data such that figures in the manuscript are reproduced (in theory). 
+The repository includes IPython notebooks (.ipynb file) that can be downloaded locally and interactively executed. The code in the IPython notebook **eimd_analysis.ipynb** will process data such that figures in the manuscript are reproduced (in theory). 
 
 ---
-To execute the IPython Notebook in its entirety you will need:   
+###Description of Files
+
+* `eimd_analysis.ipynb` - IPython notebok that can be interactively executed locally or viewed online designed so that user can **replicate all analysis**. Requires several ependancies (see above)
+*  `eimd_data-only.ipynb` - IPython notebok that can be interactively executed locally or viewed online designed so that user can **simply explore** data files. _Only requires IPython_.
+* `data/Phel_transcriptome.fasta` - P hel coelocytes transcriptome. Contains xxxx contigs from de novo assembly.
+* `data/Phel_countdata.txt` - Tab-delimited text file with read count data from 6 P hel RNA-seq libraries, 3 treated and 3 control libraries.
+* `scripts/count_fasta.pl` - Perl script:  Author: Joseph Fass (modified from script by Brad Sickler) last revised: November 2010 - http://bioinformatics.ucdavis.edu.
+* `wd` - subdirectory that serves as output directory (working directory) when the repository is downloaded and the IPython notebook **eimd_analysis.ipynb** is executed locally.
+*  `precompiled_wd` - subdirectory thatprovides all data that will be produced in `wd` by running commands in notebook. Used primarily for viewing data in **eimd_data-only.ipynb**
+
+---
+
+
+#Instructions for data-only (interative viewing) notebook
+
+
+1) Download the repository zip file to a local directory and uncompress. This can be done by clicking on the link in the right sidebar or directly downloading: <https://github.com/sr320/eimd-sswd/archive/master.zip>
+
+2) Launch IPython from the repository primary directory. 
+For example, using Terminal on MacOSX.
+
+
+```
+$ cd /Desktop/eimd-sswd
+$ ipython notebook
+
+```
+This will launch IPython in your web browser.  
+
+
+3) Open notebook by clicking on **eimd_data-only.ipynb**. This will open a new tab in your browser.
+
+
+4) Execute code as written or modify to your likely. To execute cell type *shift-enter*.
+
+---
+
+
+#Instructions for analysis (interative execution) notebook
+
+1) **Before you get started**
+
+To execute the **eimd_analysis.ipynb** IPython Notebook in its entirety you will need:   
 
 * IPython - [install instructions](http://ipython.org/install.html)    
 * NBCI Blast -  [install instructions](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)  
@@ -41,60 +83,41 @@ This will generate a Protein database that you can you to blast sequences. If yo
 db="~/blastdb/uniprot_sprot"
 ```
 
-
 ---
-###Description of Files
 
-* `eimd_data.ipynb` - IPython notebok that can be interactively executed locally or viewed online.
-* `data/Phel_transcriptome.fasta` - P hel coelocytes transcriptome. Contains xxxx contigs from de novo assembly.
-* `data/Phel_countdata.txt` - Tab-delimited text file with read count data from 6 P hel RNA-seq libraries, 3 treated and 3 control libraries.
-* `scripts/count_fasta.pl` - Perl script:  Author: Joseph Fass (modified from script by Brad Sickler) last revised: November 2010 - http://bioinformatics.ucdavis.edu.
-* `wd` - subdirectory that serves as output directory (working directory) when the repository is downloaded and the IPython notebook is executed locally.
-*  `precompiled_wd` - subdirectory that serves provides all data that will be produced in `wd` by running commands in notebook.
-
----
-Note the current version of the IPython Notebook can be viewed (not interactive) in any web browser at: 
-<http://nbviewer.ipython.org/github/sr320/eimd-sswd/blob/master/eimd_data.ipynb>
-
-----
-##Instructions
-
-1) Download the repository zip file to a local directory and uncompress. This can be done by clicking on the link in the right sidebar or directly downloading: <https://github.com/che625/olson-ms-nb/archive/master.zip>
+2) Download the repository zip file to a local directory and uncompress. This can be done by clicking on the link in the right sidebar or directly downloading: <https://github.com/sr320/eimd-sswd/archive/master.zip>
 
 2) Launch IPython from the repository primary directory. 
 For example, using Terminal on MacOSX.
 
 
 ```
-$ cd /Desktop/olson-ms-nb
+$ cd /Desktop/eimd-sswd
 $ ipython notebook
 
 ```
 This will launch IPython in your web browser.  
-   
->_screenshot_    
-![nb](http://eagle.fish.washington.edu/cnidarian/skitch/Home_1A41E21F.png)
 
-3) Open notebook by clicking on **BiGo_dev.ipynb**. This will open a new tab in your browser.
 
->_screenshot_  
-![nb2](http://eagle.fish.washington.edu/cnidarian/skitch/BiGo_dev_1A41E5C5.png)  
+3) Open notebook by clicking on **eimd_anlysis.ipynb**. This will open a new tab in your browser.
 
 
 
-4) In theory, assuming all dependencies are installed
+4) Modify the cell near the top of the notebook …
 
-* BSMAP   
-* bedtools   
-* R   
-* rpy2 (interface to R from Python)  
+```
+#Variables user needs to modify accordingly
+db="~/blastdb/uniprot_sprot"
+sqls="~/sqlshare-pythonclient/tools/"
+usr="sr320@washington.edu"
+```
+`db` refers to location of blastdb (instructions on bow to create database in _step 1_).   
+`sqls` refers to the location of your sqlshare-pythonclient tools subdirectory (instructions to install in _step 1_).   
+`usr` refers to your SQLshare user name (yep, see _step 1_ if need be)
 
-you could edit the cell near the top to provide the location of BSMAP on your machine, then run all cells (see screenshot). Raw data will be downloaded, and analyses carried out, producing figures (2) in manuscript. Please note data is very large (>20 GB) and analyses will take several hours depending on your machine.
 
->_screenshot_   
-![nb3](http://eagle.fish.washington.edu/cnidarian/skitch/BiGo_dev_1A41EC5B.png)
+5) Execute code as written or modify to your likely. To execute cell type *shift-enter*. Once variables are set, you should be able to run all cells.
 
-In practice, you can execute cells individually with `shift-enter`.
 
 ---
 
