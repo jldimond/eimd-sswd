@@ -1,5 +1,5 @@
 
-### IPython Notebook and data supplemental to the manuscript: "_Up in arms: Immune and nervous system response to sea star wasting disease_"
+### IPython Notebooks and data supplemental to the manuscript: "_Up in arms: Immune and nervous system response to sea star wasting disease_"
 
 <!---
 INSERT LINKS HERE
@@ -76,12 +76,7 @@ Below is an example code if you wanted to create the database in a subdirectory 
 
 `$ makeblastdb -in uniprot_sprot.fasta -dbtype prot -out uniprot_sprot`
 
-This will generate a Protein database that you can you to blast sequences. If you made the `blastdb` subdirectory in your home directory you would modify the IPython notebook variables such that 
-
-```
-#Variables user needs to modify accordingly
-db="~/blastdb/uniprot_sprot"
-```
+This will generate a Protein database that you can you to blast sequences. 
 
 ---
 
