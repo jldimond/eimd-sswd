@@ -111,7 +111,7 @@ usr="sr320@washington.edu"
 `usr` refers to your SQLshare user name (yep, see _step 1_ if need be)
 
 
-5) Execute code as written or modify to your likely. To execute cell type *shift-enter*. Once variables are set, you should be able to run all cells.
+5) Execute code as written or modify to your liking. To execute cell type *shift-enter*. Once variables are set, you should be able to run all cells.
 
 
 ---
