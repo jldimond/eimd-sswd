@@ -23,7 +23,7 @@ The repository includes IPython notebooks (.ipynb file) that can be downloaded l
 ---
 
 
-#Instructions for data-only (interative viewing) notebook
+#Instructions for data-only (interactive viewing) notebook
 
 
 1) Download the repository zip file to a local directory and uncompress. This can be done by clicking on the link in the right sidebar or directly downloading: <https://github.com/sr320/eimd-sswd/archive/master.zip>
@@ -48,7 +48,7 @@ This will launch IPython in your web browser.
 ---
 
 
-#Instructions for analysis (interative execution) notebook
+#Instructions for analysis (interactive execution) notebook
 
 1) **Before you get started**
 
@@ -94,7 +94,7 @@ $ ipython notebook
 This will launch IPython in your web browser.  
 
 
-3) Open notebook by clicking on **eimd_anlysis.ipynb**. This will open a new tab in your browser.
+3) Open notebook by clicking on **eimd_analysis.ipynb**. This will open a new tab in your browser.
 
 
 
