@@ -12,8 +12,10 @@ The repository includes IPython notebooks (.ipynb file) that can be downloaded l
 ---
 ###Description of Files
 
-* `eimd_analysis.ipynb` - IPython notebok that can be interactively executed locally or viewed online designed so that user can **replicate all analysis**. Requires several ependancies (see above)
+* `eimd_analysis.ipynb` - IPython notebok that can be interactively executed locally or viewed online designed so that user can **replicate all analysis**. Requires several dependancies (see below).
+[nbviewer version](http://nbviewer.ipython.org/github/sr320/eimd-sswd/blob/master/eimd_analysis.ipynb)
 *  `eimd_data-only.ipynb` - IPython notebok that can be interactively executed locally or viewed online designed so that user can **simply explore** data files. _Only requires IPython_.
+[nbviewer version](http://nbviewer.ipython.org/github/sr320/eimd-sswd/blob/master/eimd_data-only.ipynb)
 * `data/Phel_transcriptome.fasta` - P hel coelocytes transcriptome. Contains xxxx contigs from de novo assembly.
 * `data/Phel_countdata.txt` - Tab-delimited text file with read count data from 6 P hel RNA-seq libraries, 3 treated and 3 control libraries.
 * `scripts/count_fasta.pl` - Perl script:  Author: Joseph Fass (modified from script by Brad Sickler) last revised: November 2010 - http://bioinformatics.ucdavis.edu.
