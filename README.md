@@ -29,7 +29,7 @@ The repository includes jupyter notebooks (.ipynb file) that can be downloaded l
 #Instructions for data-only (interactive viewing) notebook
 
 
-1) Download the repository zip file to a local directory and uncompress. This can be done by clicking on the link in the right sidebar or directly downloading: <https://github.com/sr320/eimd-sswd/archive/master.zip>
+1) Download the repository zip file to a local directory and uncompress.
 
 2) Launch IPython from the repository primary directory. 
 For example, using Terminal on MacOSX.
@@ -83,9 +83,9 @@ This will generate a Protein database that you can you to blast sequences.
 
 ---
 
-2) Download the repository zip file to a local directory and uncompress. This can be done by clicking on the link in the right sidebar or directly downloading: <https://github.com/sr320/eimd-sswd/archive/master.zip>
+2) Download the repository zip file to a local directory and uncompress. 
 
-2) Launch IPython from the repository primary directory. 
+3) Launch IPython from the repository primary directory. 
 For example, using Terminal on MacOSX.
 
 
@@ -97,24 +97,24 @@ $ ipython notebook
 This will launch IPython in your web browser.  
 
 
-3) Open notebook by clicking on **eimd_analysis.ipynb**. This will open a new tab in your browser.
+4) Open notebook by clicking on **eimd_analysis.ipynb**. This will open a new tab in your browser.
 
 
 
-4) Modify the cell near the top of the notebook …
+5) Modify the cell near the top of the notebook …
 
 ```
 #Variables user needs to modify accordingly
 db="~/blastdb/uniprot_sprot"
 sqls="~/sqlshare-pythonclient/tools/"
-usr="sr320@washington.edu"
+usr="user@gmail.com"
 ```
 `db` refers to location of blastdb (instructions on bow to create database in _step 1_).   
 `sqls` refers to the location of your sqlshare-pythonclient tools subdirectory (instructions to install in _step 1_).   
 `usr` refers to your SQLshare user name (yep, see _step 1_ if need be)
 
 
-5) Execute code as written or modify to your liking. To execute cell type *shift-enter*. Once variables are set, you should be able to run all cells.
+6) Execute code as written or modify to your liking. To execute cell type *shift-enter*. Once variables are set, you should be able to run all cells.
 
 
 ---
