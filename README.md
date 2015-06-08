@@ -1,5 +1,5 @@
 
-### IPython Notebooks and data supplemental to the manuscript: "_Up in arms: Immune and nervous system response to sea star wasting disease_"
+###Jupyter Notebooks and data supplemental to the manuscript: "_Up in arms: Immune and nervous system response to sea star wasting disease_"
 
 <!---
 INSERT LINKS HERE
@@ -7,15 +7,13 @@ INSERT LINKS HERE
 
 ---
 
-The repository includes IPython notebooks (.ipynb file) that can be downloaded locally and interactively executed. The code in the IPython notebook **eimd_analysis.ipynb** will process data such that figures in the manuscript are reproduced (in theory). 
+The repository includes jupyter notebooks (.ipynb file) that can be downloaded locally and interactively executed. The code in the jupyter notebook **eimd_analysis.ipynb** will process data such that analysis can be reproduced.
 
 ---
-###Description of Files
+###Description of Files and Directories
 
-* `eimd_analysis.ipynb` - IPython notebok that can be interactively executed locally or viewed online designed so that user can **replicate all analysis**. Requires several dependancies (see below).
-[nbviewer version](http://nbviewer.ipython.org/github/sr320/eimd-sswd/blob/master/eimd_analysis.ipynb)
-*  `eimd_data-only.ipynb` - IPython notebok that can be interactively executed locally or viewed online designed so that user can **simply explore** data files. _Only requires IPython_.
-[nbviewer version](http://nbviewer.ipython.org/github/sr320/eimd-sswd/blob/master/eimd_data-only.ipynb)
+* [eimd_analysis.ipynb](https://github.com/sr320/eimd-sswd/blob/master/eimd_analysis.ipynb) - Jupyter notebook that can be interactively executed locally or viewed online designed so that user can **replicate analysis**. Requires several dependancies.
+*  [eimd_data-only.ipynb](https://github.com/sr320/eimd-sswd/blob/master/eimd_data-only.ipynb) - Jupyter notebok that can be interactively executed locally or viewed online designed so that user can **simply explore** data files. _Only requires IPython_.
 * `data/Phel_transcriptome.fasta` - P hel coelocytes transcriptome. Contains xxxx contigs from de novo assembly.
 * `data/Phel_countdata.txt` - Tab-delimited text file with read count data from 6 P hel RNA-seq libraries, 3 treated and 3 control libraries.
 * `scripts/count_fasta.pl` - Perl script:  Author: Joseph Fass (modified from script by Brad Sickler) last revised: November 2010 - http://bioinformatics.ucdavis.edu.
