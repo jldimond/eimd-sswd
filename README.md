@@ -14,11 +14,12 @@ The repository includes jupyter notebooks (.ipynb file) that can be downloaded l
 
 * [eimd_analysis.ipynb](https://github.com/sr320/eimd-sswd/blob/master/eimd_analysis.ipynb) - Jupyter notebook that can be interactively executed locally or viewed online designed so that user can **replicate analysis**. Requires several dependancies.
 *  [eimd_data-only.ipynb](https://github.com/sr320/eimd-sswd/blob/master/eimd_data-only.ipynb) - Jupyter notebok that can be interactively executed locally or viewed online designed so that user can **simply explore** data files. _Only requires IPython_.
-* `data/Phel_transcriptome.fasta` - P hel coelocytes transcriptome. Contains xxxx contigs from de novo assembly.
+* `data/Phel_transcriptome.fasta` - P hel coelocytes transcriptome. Contains 29476 contigs from de novo assembly.
 * `data/Phel_countdata.txt` - Tab-delimited text file with read count data from 6 P hel RNA-seq libraries, 3 treated and 3 control libraries.
 * `scripts/count_fasta.pl` - Perl script:  Author: Joseph Fass (modified from script by Brad Sickler) last revised: November 2010 - http://bioinformatics.ucdavis.edu.
-* `wd` - subdirectory that serves as output directory (working directory) when the repository is downloaded and the IPython notebook **eimd_analysis.ipynb** is executed locally.
-*  `precompiled_wd` - subdirectory thatprovides all data that will be produced in `wd` by running commands in notebook. Used primarily for viewing data in **eimd_data-only.ipynb**
+* `wd` - subdirectory that serves as output directory (working directory) when the repository is downloaded and the notebook **eimd_analysis.ipynb** is executed locally.
+*  `precompiled_wd` - subdirectory that provides all data that will be produced in `wd` by running commands in notebook. Used primarily for viewing data in **eimd_data-only.ipynb**
+*  
 
 ---
 
